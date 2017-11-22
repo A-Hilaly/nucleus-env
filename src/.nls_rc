@@ -1,0 +1,12 @@
+
+export PATH="$PATH:$NLS_BIN"
+
+export NUCLEUS_DIR="$HOME/Nucleus"
+# NLS DIR
+export NLS_BIN="$NUCLEUS_DIR/bin"
+export NLS_DATA="$NUCLEUS_DIR/data"
+export NLS_VENV="$NUCLEUS_DIR/venv"
+export NLS_CACHE="$NUCLEUS_DIR/cache"
+export NLS_HISTORY="$NUCLEUS_DIR/history"
+
+source $NUCLEUS_DIR/nlst.sh
