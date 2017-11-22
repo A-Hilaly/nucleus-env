@@ -1,0 +1,25 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run:
+          name: build pkg
+          command: |
+            bash nucleus.sh setup
+
+      - run:
+          name: test pkg
+          command: |
+            bash tests.sh
+
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports
