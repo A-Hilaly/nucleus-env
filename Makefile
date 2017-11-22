@@ -3,14 +3,19 @@
 
 # Shell
 SHELL := /bin/bash
+
 #Project
 PROJECT = "Nucleus"
+
 #Version
 RELEASE = "0.0.1"
+
 #Authors
 AUTHORS = "M.A. Hilaly"
+
 # Path to source directory
 NUCLEUS_PATH := .
+
 # OS machine
 OS_TYPE = 'uname -a'
 
@@ -38,6 +43,3 @@ test-nls:
 
 
 all: setup-nls
-
-
-.PHONY: clean
